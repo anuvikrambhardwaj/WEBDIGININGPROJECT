@@ -1,0 +1,474 @@
+/* Default styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    body {
+        padding-bottom: 200px; /* Make room for the fixed footer */
+    }
+     
+}
+
+    h1 {
+        text-align: center;
+        margin-top: 80px;
+        font-size: 3.5rem;
+    }
+    #home p {
+        color: #333;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+.bg-image {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: backgroundSlideshow 15s infinite; /* 15 seconds for a smooth transition */
+}
+
+/* 🔎 Keyframes for Background Image Animation */
+@keyframes backgroundSlideshow {
+    0% {
+        background-image: url('project web/R.jpg');
+    }
+    33% {
+        background-image: url('project web/R2.jpg'); 
+    }
+    66% {
+        background-image: url('project web/R3.jpg'); 
+    }
+    100% {
+        background-image: url('project web/R4.jpg'); 
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 60px; /* Adjust as needed */
+    width: auto;
+}
+
+/* Navbar styling */
+.navbar {
+    margin-right: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+
+
+header nav a {
+    text-decoration: none;
+    color: white; /* Ensuring white text color */
+    font-weight: bold;
+    position: relative;
+    margin: 0 15px;
+}
+
+header nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: orange;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+}
+
+header nav a:hover::after {
+    width: 100%;
+}
+
+/* new add confuse */
+
+.navbar a:hover {
+
+    text-decoration: underline;
+}
+
+.scroll-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    height: 660px;
+    flex-wrap: wrap;
+}
+
+.scroll-container {
+    display: flex;
+    gap: 10px;
+}
+
+.scroll-container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+
+.content-wrapper {
+    padding: 80px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #004080;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight:600;
+    margin-top: 12px;
+    color: #333;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 12px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Complaint Links */
+a.complaint-link {
+    display: block;
+    margin: 10px 0;
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 18px;
+}
+a.complaint-link:hover {
+    text-decoration: underline;
+}
+/* Visit Button */
+.visit-button {
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.visit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Section Visibility */
+#visit-page {
+    display: block;
+    text-align: center;
+    padding: 100px 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            margin: 50px auto;
+            border-radius: 10px;
+            max-width: 600px;
+
+}
+
+section {
+    display: block;
+    padding: 80px 40px;
+
+}
+
+section:target {
+    display: block;
+}
+
+/* University Page */
+#university-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.6); /* Transparent overlay for contrast */
+    padding: 60px;
+    margin-top: 80px; /* Push content below the header */
+}
+
+#university-page h1 {
+    font-size: 4rem; /* Larger font size for prominence */
+    color: #3519c2; /* Gold color */
+    margin-bottom: 20px;
+}
+
+#university-page h2 {
+    font-size: 4rem;
+    color: #00FA9A; /* Spring Green for variety */
+    margin-top: 10px;
+}
+    #university-page p {
+        font-size: 1.5rem;
+        color: #FFFFFF; /* White for clarity */
+        margin-bottom: 20px;
+        line-height: 1.8;
+    }
+    
+
+/* Visit Link Styling */
+.visit-link {
+    margin-top: 20px;
+    display: inline-block;
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.visit-link:hover {
+    background-color: #FFD700;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+}
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Form Styling */
+.register-form, .login-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+;
+}
+.register-form input, .login-form input {
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+button:hover {
+    background-color: #0056b3;
+}
+
+
+.courses-container {
+    text-align:left;
+    padding: 80px 20px;
+    color: rgb(255, 100, 100);
+    font-size: 2.2rem;
+    
+}
+    .courses-container2 {
+        text-align:center;
+        padding: 80px 20px;
+        color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+    }
+  
+  
+  h1 {
+    font-size: 3.5rem;
+    color: #e40505d2;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+    color: #00FA9A;
+    margin-top: 40px;
+  }
+  
+  /* Course List Styling */
+  .course-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course-list li::before {
+    content: "•";
+    color: #00FA9A;
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+  }
+  
+  th {
+    background-color: #007bff;
+    color: white;
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+  
+  td {
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    table {
+      width: 100%;
+      flex-direction: column;
+        text-align: center;
+    }
+  }
+
+.about h1{ 
+    font-size: 3.5rem;
+    color: #e40505d2;
+}
+#about p {
+    font-size: 4rem;
+    color: #3d0fa7;  
+    margin-top: 10px;    
+}
+
+/* 🔎 Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    z-index: 999; /* ensure it's on top */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Footer Column Styling */
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    margin: 10px;
+    min-width: 250px;
+}
+
+/* Footer Headings */
+footer h3 {
+    color: #FFD700;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+/* Footer Links */
+footer a {
+    color: #00FA9A;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+}
+
+footer a:hover {
+    color: #FFD700;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+    margin-top: 20px;
+    color: #ccc;
+}
+
+/* Responsive Footer */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
